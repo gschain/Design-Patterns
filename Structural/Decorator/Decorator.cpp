@@ -13,11 +13,11 @@ public:
 
 /* 定义一个对象，可以给这个对象添加一些职责。
  */
-class ConcreateComponent:public Component {
+class ConcreteComponent:public Component {
 public:
     void Operation()
     {
-        cout<<"ConcreateComponent::Operation..."<<endl;
+        cout<<"ConcreteComponent::Operation..."<<endl;
     }
 };
 
@@ -33,12 +33,12 @@ protected:
 
 /* 抽象装饰类的子类，负责向构件添加新的职责
  */
-class ConcreateDecorator:public Decorator {
+class ConcreteDecorator:public Decorator {
 public:
-    ConcreateDecorator(Component *com):Decorator(com) {}
+    ConcreteDecorator(Component *com):Decorator(com) {}
     void AddedBehavior()
     {
-        cout<<"ConcreateDecorator::AddedBehavior..."<<endl;
+        cout<<"ConcreteDecorator::AddedBehavior..."<<endl;
     }
     void Operation()
     {
@@ -49,8 +49,8 @@ public:
 
 int main(int argc, char *argv[])
 {
-    Component *com = new ConcreateComponent();
-    Decorator *dec = new ConcreateDecorator(com);
+    Component *com = new ConcreteComponent();
+    Decorator *dec = new ConcreteDecorator(com);
     dec->Operation();
 
     return 0;

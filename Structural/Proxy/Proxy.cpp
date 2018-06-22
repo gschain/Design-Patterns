@@ -14,11 +14,11 @@ public:
 
 /* 定义Subject实现类
  */
-class ConcreateSubject:public Subject {
+class ConcreteSubject:public Subject {
 public:
     void Request() 
     {
-        cout<<"ConcreateSubject::Request..."<<endl;
+        cout<<"ConcreteSubject::Request..."<<endl;
     }
 };
 
@@ -44,7 +44,7 @@ private:
 int main(int argc, char *argv[])
 {
 
-    Subject *sub = new ConcreateSubject();
+    Subject *sub = new ConcreteSubject();
     Proxy *pro = new Proxy(sub);
     pro->Request();
 

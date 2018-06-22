@@ -14,21 +14,21 @@ public:
 
 /*实现一个克隆自身的操作
  */
-class ConcreatePrototype:public Prototype {
+class ConcretePrototype:public Prototype {
 public:
-    ConcreatePrototype() {}
-    ConcreatePrototype(const ConcreatePrototype &cp)
+    ConcretePrototype() {}
+    ConcretePrototype(const ConcretePrototype &cp)
     {
-        cout<<"ConcreatePrototype copy "<<endl;
+        cout<<"ConcretePrototype copy "<<endl;
     }
     Prototype *clone() const 
     {
-        return new ConcreatePrototype(*this);
+        return new ConcretePrototype(*this);
     }
 };
 int main(int argc, char *argv[])
 {
-    Prototype *p = new ConcreatePrototype();
+    Prototype *p = new ConcretePrototype();
     Prototype *p1 = p->clone();
     return 0;   
 }
