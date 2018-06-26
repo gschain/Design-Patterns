@@ -54,7 +54,7 @@ int main(int argc, char *argv[])
     Receiver *pRev = new Receiver();  
     Command *pCmd = new ConcreteCommand(pRev);  
     //请求绑定命令  
-    Invoker* pInv = new Invoker(pCmd);  
+    Invoker *pInv = new Invoker(pCmd);  
     pInv->Invoke();  
     return 0;
 }
