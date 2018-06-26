@@ -15,6 +15,7 @@
 
 
 结构型（7个）
+
 适配器模式 （Adapter Patterns）
 
 桥接模式 （Bridge Patterns）
@@ -31,3 +32,24 @@
 
 行为型（11个）
 
+责任链模式 （Chain Of Responsibility Patterns)
+
+命令模式 （Commnad Patterns）
+
+解析器模式 （Interpreter Patterns）
+
+迭代器模式 （Iterator Patterns）
+
+中介者模式 （Mediator Patterns)
+
+备忘录模式 （Memento Patterns）
+
+观察者模式 （Observer Patterns）
+
+状态模式 （State Patterns）
+
+策略模式 （Strategy Patterns）
+
+模板方法模式 （TemplateMethod Patterns）
+
+访问者模式 （Visitor Patterns）
