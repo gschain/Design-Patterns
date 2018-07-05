@@ -29,9 +29,9 @@
     深拷贝：对值类型的成员变量进行值的复制,对引用类型的成员变量也进行引用对象的复制。
 
 
-Prototype 模式通过复制原型(Prototype)而获得新对象创建的功能，这里 Prototype 本 身就是“对象工厂”(因为能够生产对象)，
-实际上 Prototype 模式和 Builder 模式、 AbstractFactory 模式都是通过一个类(对象实例)来专门负责对象的创建工作(工厂对象)， 
+Prototype模式通过复制原型(Prototype)而获得新对象创建的功能，这里Prototype本身就是“对象工厂”(因为能够生产对象)，
+实际上Prototype模式和Builder模式、AbstractFactory模式都是通过一个类(对象实例)来专门负责对象的创建工作(工厂对象)， 
 它们之间的区别是:
-Builder 模式重在复杂对象的一步步创建(并不直接返回对象)，
-AbstractFactory 模式重在产生多个相互依赖类的对象，
-而 Prototype 模式重在从自身复制自己创建新类。
+Builder模式重在复杂对象的一步步创建(并不直接返回对象)，
+AbstractFactory模式重在产生多个相互依赖类的对象，
+而Prototype模式重在从自身复制自己创建新类。
